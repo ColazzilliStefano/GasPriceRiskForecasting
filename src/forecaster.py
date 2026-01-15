@@ -33,7 +33,7 @@ class GasPriceForecaster:
         3. Tail Risk: Extreme Value Theory using Student-t distribution (Fat Tails).
     """
 
-    def __init__(self, file_path, threshold=4.0, window_size=1000):
+    def __init__(self, file_path, threshold=5.0, window_size=1000):
         self.file_path = file_path
         self.threshold = threshold # Sigma threshold for shock detection
         self.window_size = window_size
